@@ -4,7 +4,6 @@
 
 # Members
       김민수 수학과 maengjja@naver.com
-  
       김윤기 수학과 dbsrl7665@naver.com
 # Ⅰ. Proposal
   - 
