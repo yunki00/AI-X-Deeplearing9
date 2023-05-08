@@ -7,6 +7,9 @@
   
   김윤기 수학과 dbsrl7665@naver.com
 # Ⅰ. Proposal
+  - 
+  
+  - 
 # Ⅱ. Datasets
 # Ⅲ. Methodlogy
 # Ⅳ. Evaluation & Analysis
