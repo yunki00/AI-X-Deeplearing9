@@ -30,7 +30,7 @@ LFW Face Database를 사용하겠습니다.
 # Ⅴ. Related Work
 ArcFace: Additive Angular Margin Loss for Deep Face Recognition
 
-http://vis-www.cs.umass.edu/lfw/#download
+http://vis-www.cs.umass.edu/lfw/
 
 https://www.kaggle.com/code/sangpham283/arcface-clone/notebook
 # Ⅵ. Conclusion
