@@ -1,6 +1,6 @@
 # AI-X-Deeplearing
 
-# Title : Transformer 구조를 활용한 번역모델 구현
+# Title : Arcface 논문에 따른 얼굴 인식 모델 구현
 
 # Members
       김민수 수학과 maengjja@naver.com
@@ -22,7 +22,7 @@
 최종적으로 Transformer 구조를 활용한 번역모델 구현을 목표로합니다.
 
 # Ⅱ. Datasets
-# Ⅲ. Methodlogy
-# Ⅳ. Evaluation & Analysis
+LFW Face Database를 사용하겠습니다.
+
 # Ⅴ. Related Work()
 # Ⅵ. Conclusion
