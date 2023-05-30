@@ -11,7 +11,7 @@
 ### Ⅱ. Datasets
 ### Ⅲ. Methodlogy
 ### Ⅳ. Evaluation & Analysis
-### Ⅴ. Related Work()
+### Ⅴ. Related Work
 ### Ⅵ. Conclusion
 
 
@@ -27,5 +27,6 @@ LFW Face Database를 사용하겠습니다.
 # Ⅲ. Methodlogy
 
 # Ⅳ. Evaluation & Analysis
-# Ⅴ. Related Work()
+# Ⅴ. Related Work
+https://www.kaggle.com/code/sangpham283/arcface-clone/notebook
 # Ⅵ. Conclusion
