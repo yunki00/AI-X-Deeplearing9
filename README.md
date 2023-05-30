@@ -24,5 +24,8 @@
 # Ⅱ. Datasets
 LFW Face Database를 사용하겠습니다.
 
+# Ⅲ. Methodlogy
+
+# Ⅳ. Evaluation & Analysis
 # Ⅴ. Related Work()
 # Ⅵ. Conclusion
