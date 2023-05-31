@@ -24,13 +24,16 @@
 
 # Ⅱ. Datasets
 LFW Face Database를 사용하겠습니다.
-
+해당 데이터 셋은 1680명의 사람들의 13000장 이상의 사진들로 이루어져있습니다. 각각의 사진 속 인물의 이름이 라벨로 붙어있고 해당 사진의 확장자는 JPEG으로 되어있습니다. 또한 해당 사진들의 픽셀은 62*47 입니다.
 https://www.kaggle.com/datasets/atulanandjha/lfwpeople
 
 # Ⅲ. Methodlogy
 ## CNN
 
+
 ## 손실함수 : arcface loss function 사용
+<img width="411" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/6a9e2def-d443-4032-9a65-4c2b4e29e50b">
+
 
 # Ⅳ. Evaluation & Analysis
 # Ⅴ. Related Work
