@@ -38,14 +38,11 @@ CNN :
 
 <img width="272" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/0168ce00-cb8a-4254-84fe-525acce54037">
 
-
 에서 분력력을 증가시키고 학습을 안정화하기 위해 각도에 직접적 margin penalty를 더 해준 Arcface loss funcyion는 다음과 같다.
 
 <img width="411" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/6a9e2def-d443-4032-9a65-4c2b4e29e50b">
 
 Softmax function하고 Arcface funtion을 그림으로 비교해 보면 다음과 같다.
-
-
 
 <img width="303" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/a7e2cff1-d07c-4207-95b6-886cc82bc424">
 
