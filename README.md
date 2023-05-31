@@ -31,18 +31,20 @@ https://www.kaggle.com/datasets/atulanandjha/lfwpeople
 
 # Ⅲ. Methodlogy
 ## CNN기반의 ResNet구조
-CNN : 
+CNN : Convolution Neural Network의 약자로 이미지를 학습시키기 위해 자주 사용하는 구조입니다. 한 픽셀의 인접한 픽셀의 값들로 영향 받아 값이 나오고 그것으로 학습을 하는 구조입니다. 
+
+ResNet : 기본적인 CNN구조에 layer가 일정 수준 이상으로 깊어지면 결과가 더 안 좋게 나오게 됩니다. 그래서 ResNet구조를 이용해 망이 깊어져도 더 좋은결과가 나올 수 있게 사용할 것입니다.
 
 ## 손실함수 : Arcface loss function 사용
 기존 Softmax loss functuion인
 
 <img width="272" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/0168ce00-cb8a-4254-84fe-525acce54037">
 
-에서 분력력을 증가시키고 학습을 안정화하기 위해 각도에 직접적 margin penalty를 더 해준 Arcface loss funcyion는 다음과 같다.
+에서 분변력을 증가시키고 학습을 안정화하기 위해 각도에 직접적 margin penalty를 더 해준 Arcface loss funcyion을 사용할 것입니다. 이 loss function은 다음과 같습니다.
 
 <img width="411" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/6a9e2def-d443-4032-9a65-4c2b4e29e50b">
 
-Softmax function하고 Arcface funtion을 그림으로 비교해 보면 다음과 같다.
+Softmax function하고 Arcface funtion을 그림으로 비교해 보면 다음과 같습니다.
 
 <img width="303" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/a7e2cff1-d07c-4207-95b6-886cc82bc424">
 
