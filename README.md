@@ -24,16 +24,23 @@
 
 # Ⅱ. Datasets
 LFW Face Database를 사용하겠습니다.
+
 해당 데이터 셋은 1680명의 사람들의 13000장 이상의 사진들로 이루어져있습니다. 각각의 사진 속 인물의 이름이 라벨로 붙어있고 해당 사진의 확장자는 JPEG으로 되어있습니다. 또한 해당 사진들의 픽셀은 62*47 입니다.
+
 https://www.kaggle.com/datasets/atulanandjha/lfwpeople
 
 # Ⅲ. Methodlogy
-## CNN
+## CNN기반의 ResNet구조
+CNN : 
 
-
-## 손실함수 : arcface loss function 사용
+## 손실함수 : Arcface loss function 사용
 <img width="411" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/6a9e2def-d443-4032-9a65-4c2b4e29e50b">
 
+기존 Softmax loss functuion인 <img width="272" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/0168ce00-cb8a-4254-84fe-525acce54037">
+에서 분력력을 증가시키고 학습을 안정화하기 위해 각도에 직접적 margin penalty를 더해줬다.
+
+Softmax function하고 Arcface funtion을 그림으로 비교해 보면 다음과 같다.
+<img width="303" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/a7e2cff1-d07c-4207-95b6-886cc82bc424">
 
 # Ⅳ. Evaluation & Analysis
 # Ⅴ. Related Work
