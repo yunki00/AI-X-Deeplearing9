@@ -48,19 +48,21 @@ convolution이라는 단어는 합성곱이라는 뜻으로 CNN에서 사용하�
 
 <img width="364" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/8c5b2003-e761-4d5f-a4a3-921dc3fb5b92">
 
-위 과정을 반복하면 아래와 같이 출력데이터가 나오게 됩니다.
+위 과정을 필터를 옮겨가며 반복하면 아래와 같이 출력데이터가 나오게 됩니다.
 
 3. 
 
 <img width="526" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c509cba4-325d-45fe-bbf8-8d369fb972f4">
 
-위 사진은 기존 이미지의 데이터를 그대로 convolution filter를 사용하면 다음계층으로 전달 될 이미지 데이터의 크기가 다음과 같이 정해지게 됩니다.
+위 사진은 기존 이미지의 데이터를 그대로 convolution filter와 연산한 것입니다. 위와 같이 연산하면 다음계층으로 전달 될 이미지 데이터의 크기가 다음과 같이 정해지게 됩니다.
+
 O = N - F + 1
 
 (N : 입력데이터의 크기, F : kernel의 크기, O : 출력데이터 크기 )
 
 따라서 우리의 필요에 따라 stride의 크기를 다르게 하거나 padding 또는 pooling연산을 이용하여 output 데이터를 우리가 원하는 크기로 만들 수 있습니다. 
 #### padding : convolution 연산을 하기 전 이미지 데이터 주변에 특정 값을 채워 크기를 늘리는 방법입니다.
+아래 사진은 빈칸에 특정 값 0을 채워 연산한 것입니다.
 4. 
 
 <img width="391" alt="pad" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3288a64b-89a3-478b-a7df-86c3995f7457">
@@ -93,9 +95,7 @@ O = N - F + 1
 9. 
 
 <img width="443" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3bef11c2-e62e-4f2c-9f2a-777226ac343d">
-
-
-
+<br/><br/>
 CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 
 10.
