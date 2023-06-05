@@ -58,16 +58,17 @@ O = N - F + 1
 #### stride : stride는 보폭이란 의미로 필터를 적용하는 간격입니다. stride를 크게 하면 다음 그림과 같이 출력 데이터의 크기가 감소하게 됩니다.
 <img width="329" alt="stride" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c3bdad17-630a-4aa6-a95e-ff992547a466">
 
-### loss function : 학습 중에 알고리즘이 얼마나 잘못 예측하는 정도를 확인하기 위한 함수입니다. 예시로는 
+#### loss function : 학습 중에 알고리즘이 얼마나 잘못 예측하는 정도를 확인하기 위한 함수입니다. 예시로는 
 
-### gradient descent : 손실함수(loss function)의 최소 지점을 찾기 위해 경사가 가장 가파른 곳을 찾아서 현재 위치에서 그 방향으로 내려가는 방법으로 손실함수의 최솟값을 찾을 수 있게 도와주는 역할을 합니다.
+#### gradient descent : 손실함수(loss function)의 최소 지점을 찾기 위해 경사가 가장 가파른 곳을 찾아서 현재 위치에서 그 방향으로 내려가는 방법으로 손실함수의 최솟값을 찾을 수 있게 도와주는 역할을 합니다.
+<img width="299" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/5f95066c-5aaa-4d9f-ad14-d48b4eff93c9">
 
-### Activation fucntion : 입력 신호의 총합을 출력 신호로 변환하는 함수로서 입력신호의 총합이 활성화를 일으키는지 아닌지 정하는 역할을 합니다. 
+#### Activation fucntion : 입력 신호의 총합을 출력 신호로 변환하는 함수로서 입력신호의 총합이 활성화를 일으키는지 아닌지 정하는 역할을 합니다. 
 ex) ReLU : 
 
 <img width="232" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3082b8b7-4cb1-4350-ac4e-aff2ca6e97e4">
 
-### batch normalization : 각 layer에 따라서 입력 값의 분포가 다른 것의 데이터 분포를 정규화합니다
+#### batch normalization : 각 layer에 따라서 입력 값의 분포가 다른 것의 데이터 분포를 정규화합니다
 <img width="443" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3bef11c2-e62e-4f2c-9f2a-777226ac343d">
 
 ### ResNet
@@ -98,4 +99,11 @@ https://www.kaggle.com/datasets/atulanandjha/lfwpeople
 
 https://amber-chaeeunk.tistory.com/24
 
+https://yjjo.tistory.com/8
+
+https://www.researchgate.net/figure/Commonly-used-activation-functions-a-Sigmoid-b-Tanh-c-ReLU-and-d-LReLU_fig3_335845675
+
+https://amber-chaeeunk.tistory.com/24
+
+https://gaussian37.github.io/dl-concept-batchnorm/
 # Ⅵ. Conclusion
