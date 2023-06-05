@@ -97,32 +97,36 @@ CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 <img width="561" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/03215c1f-99a9-4d95-bf78-ac6c5784b641">
 
 ### ResNet
-기본적인 CNN구조에 layer가 일정 수준 이상으로 깊어지면 결과가 더 안 좋게 나오게 됩니다. 그래서 ResNet구조를 이용해 망이 깊어져도 더 좋은결과가 나올 수 있게 사용할 것입니다.
+기본적인 CNN구조를 사용하면 layer가 일정 수준 이상으로 깊어지면 자유 파라미터들의 개수가 증가하여 학습의 하락을 유발합니다. 이것을 방지하기 위해 layer에 input x의 identity인 x를 더해줘서 연산을 수행하는 ResNet을 사용하여 layer를 깊게 만들어도 학습의 하락이 이뤄지지 않고 잘 학습되는 것을 확인 할 수 있습니다.
+
+11.
+
+![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c16a19b6-0e59-42e5-a46a-d9b29f86a39e)
 
 ## 손실함수 : Arcface loss function 사용
 기존 Softmax loss functuion인
 
-11. 
+12. 
 
 <img width="272" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/0168ce00-cb8a-4254-84fe-525acce54037">
 
 에서 분변력을 증가시키고 학습을 안정화하기 위해 각도에 직접적 margin penalty를 더 해준 Arcface loss funcyion을 사용할 것입니다. 이 loss function은 다음과 같습니다.
 
-12. 
+13. 
 
 <img width="411" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/6a9e2def-d443-4032-9a65-4c2b4e29e50b">
 
 Softmax function하고 Arcface funtion을 그림으로 비교해 보면 다음과 같습니다.
 
-13. 
+14. 
 
 <img width="303" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/a7e2cff1-d07c-4207-95b6-886cc82bc424">
 
 # Ⅳ. Evaluation & Analysis
 # Ⅴ. Related Work
-ArcFace: Additive Angular Margin Loss for Deep Face Recognition : 이미지 11, 12, 13
+ArcFace: Additive Angular Margin Loss for Deep Face Recognition : 이미지 12, 13, 14
 
-Deep Residual Learning for Image Recognition
+Deep Residual Learning for Image Recognition : 이미지 11
 
 https://www.technologyreview.com/2022/02/23/1045416/10-breakthrough-technologies-2022
 
@@ -130,15 +134,15 @@ https://github.com/whitesoonguh/CnA_Arcface
 
 https://www.kaggle.com/datasets/atulanandjha/lfwpeople
 
-https://yjjo.tistory.com/8 이미지 1, 2, 3
+https://yjjo.tistory.com/8 : 이미지 1, 2, 3
 
-https://amber-chaeeunk.tistory.com/24 이미지 4, 6, 10
+https://amber-chaeeunk.tistory.com/24 : 이미지 4, 6, 10
 
-Do it! 딥러닝 교과서 이미지 5
+Do it! 딥러닝 교과서 : 이미지 5
 
-https://process-mining.tistory.com/175 이미지 7
+https://process-mining.tistory.com/175 : 이미지 7
 
-https://www.researchgate.net/figure/Commonly-used-activation-functions-a-Sigmoid-b-Tanh-c-ReLU-and-d-LReLU_fig3_335845675 이미지 8
+https://www.researchgate.net/figure/Commonly-used-activation-functions-a-Sigmoid-b-Tanh-c-ReLU-and-d-LReLU_fig3_335845675 : 이미지 8
 
-https://gaussian37.github.io/dl-concept-batchnorm/ 이미지 9
+https://gaussian37.github.io/dl-concept-batchnorm/ : 이미지 9
 # Ⅵ. Conclusion
