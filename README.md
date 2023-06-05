@@ -34,7 +34,9 @@ https://www.kaggle.com/datasets/atulanandjha/lfwpeople
 ### CNN
 일반적인 순방향 신경망을 사용하여 이미지를 학습하기 위해서는 공간데이터를 1차원으로 변환하기 때문에 정확한 패턴을 인식하기 어려워집니다. 또한 고차원 데이터별로 크기가 더 커질 수록 모델의 파라미터 수도 급격하게 증가하게 됩니다. 이미지의 패턴을 효과적으로 인식하기 위해서 하나의 픽셀만 바라보는 것이 아니라 하나의 픽셀 주위의 픽셀과의 연관성을 봐야합니다. 따라서 다음 사진과 같은 convolution filter를 사용하여 많은 계층을 만든 것을 CNN(Convolution Neural Network)이라고 합니다.
 
-convolution이라는 단어는 합성곱이라는 뜻으로 CNN에서 사용하는 이미지에 대한 convolution 연산은 원래 이미지 데이터와 convolution filter의 두 행렬을 곱한 뒤 각각의 성분을 더한 값입니다. 따라서 아래 사진과 같이 나타납니다.
+convolution이라는 단어는 합성곱이라는 뜻으로 CNN에서 사용하는 이미지에 대한 convolution 연산은 원래 이미지 데이터와 convolution filter의 두 행렬의 각각의 성분을 곱한 뒤 더한 값입니다. 따라서 아래 사진과 같이 나타납니다.
+<img width="364" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/8c5b2003-e761-4d5f-a4a3-921dc3fb5b92">
+
 <img width="517" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3e8f70a0-ba19-4fc7-b0bf-ab0aa8828e31">
 
 위 사진은 기존 이미지의 데이터를 그대로 convolution filter를 사용하면 다음계층으로 전달 될 이미지 데이터의 크기가 다음과 같이 정해지게 됩니다.
