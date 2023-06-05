@@ -8,7 +8,7 @@
       
 # Index
 ## Ⅰ. Proposal
-### Motivation
+### * Motivation
 ### Goal
 ## Ⅱ. Datasets
 ## Ⅲ. Methodlogy
