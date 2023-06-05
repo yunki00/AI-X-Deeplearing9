@@ -41,8 +41,7 @@ convolution이라는 단어는 합성곱이라는 뜻으로 CNN에서 사용하�
 
 위 과정을 반복하면 아래와 같이 출력데이터가 나오게 됩니다.
 
-<img width="391" alt="KakaoTalk_20230605_201810027" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/d23630b1-321a-48cc-ac4f-3d24640b0b58">
-
+<img width="526" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c509cba4-325d-45fe-bbf8-8d369fb972f4">
 
 위 사진은 기존 이미지의 데이터를 그대로 convolution filter를 사용하면 다음계층으로 전달 될 이미지 데이터의 크기가 다음과 같이 정해지게 됩니다.
 O = N - F + 1
