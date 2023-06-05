@@ -88,7 +88,8 @@ O = N - F + 1
 
 <img width="232" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3082b8b7-4cb1-4350-ac4e-aff2ca6e97e4">
 
-#### batch normalization : 각 layer에 따라서 입력 값의 분포가 다른 것의 데이터 분포를 정규화합니다.
+#### batch normalization : 각 layer에 따라서 입력 값의 분포가 편향되어 있을 수 있습니다. 이러한 편향된 분포는 activation을 사용하면 0이 나오거나 지나치게 편향된 값이 나올 수 있으므로 데이터 분포를 정규화합니다.
+
 9. 
 
 <img width="443" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3bef11c2-e62e-4f2c-9f2a-777226ac343d">
