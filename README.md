@@ -63,6 +63,7 @@ O = N - F + 1
 따라서 우리의 필요에 따라 stride의 크기를 다르게 하거나 padding 또는 pooling연산을 이용하여 output 데이터를 우리가 원하는 크기로 만들 수 있습니다. 
 #### padding : convolution 연산을 하기 전 이미지 데이터 주변에 특정 값을 채워 크기를 늘리는 방법입니다.
 아래 사진은 빈칸에 특정 값 0을 채워 연산한 것입니다.
+
 4. 
 
 <img width="391" alt="pad" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3288a64b-89a3-478b-a7df-86c3995f7457">
