@@ -31,9 +31,25 @@ https://www.kaggle.com/datasets/atulanandjha/lfwpeople
 
 # Ⅲ. Methodlogy
 ## CNN기반의 ResNet구조
-CNN : Convolution Neural Network의 약자로 이미지를 학습시키기 위해 자주 사용하는 구조입니다. 한 픽셀의 인접한 픽셀의 값들로 영향 받아 값이 나오고 그것으로 학습을 하는 구조입니다. 
+### CNN : 일반적인 순방향 신경망을 사용하여 이미지를 학습하기 위해서는 공간데이터를 1차원으로 변환하기 때문에 정확한 패턴을 인식하기 어려워집니다. 또한 고차원 데이터별로 크기가 더 커질 수록 모델의 파라미터 수도 급격하게 증가하게 됩니다. 이미지의 패턴을 효과적으로 인식하기 위해서 하나의 픽셀만 바라보는 것이 아니라 하나의 픽셀 주위의 픽셀과의 연관성을 봐야합니다. 따라서 다음 사진과 같은 convolution filter를 사용하여 많은 계층을 만든 것을 CNN(Convolution Neural Network)이라고 합니다.
+![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/fd543f4a-9613-4584-b287-5d5169da139f)
 
-ResNet : 기본적인 CNN구조에 layer가 일정 수준 이상으로 깊어지면 결과가 더 안 좋게 나오게 됩니다. 그래서 ResNet구조를 이용해 망이 깊어져도 더 좋은결과가 나올 수 있게 사용할 것입니다.
+위의 그림은 기존 이미지의 데이터를 그대로 convolution filter를 사용하면 다음계층으로 전달 될 이미지 데이터의 크기가 다음과 같이 정해지게 됩니다.
+
+O = N - F + 1
+
+(N : 입력데이터의 크기 F : convolution filter의 크기 O : 출력데이터 크기 )
+#### padding : convolution 연산을 하기 전 이미지 데이터 주변에 특정 값을 채워 크기를 늘리는 방법
+![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/d369aed6-c355-4dc6-b7a1-10a4fa07cca1)
+
+#### pooling : 입력데이터를 일정 크기의 영역으로 나누고 그 안에 있는 데이터들의 요약통계량(평균, 최댓값, 최솟값, 가중합산)을 사용하여 데이터의 크기를 줄이는 방법
+<img width="687" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/79c0a817-a007-4747-a2b5-7b7d3ccf8118">
+
+#### stride : stride는 보폭이란 의미로 필터를 적용하는 간격입니다. 스트라이드를 크게 하면 다음 그림과 같이 출력 데이터의 크기가 감소하게 됩니다.
+![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/ccb709bf-7f87-4ffd-aede-668b2dcd07c6)
+
+
+### ResNet : 기본적인 CNN구조에 layer가 일정 수준 이상으로 깊어지면 결과가 더 안 좋게 나오게 됩니다. 그래서 ResNet구조를 이용해 망이 깊어져도 더 좋은결과가 나올 수 있게 사용할 것입니다.
 
 ## 손실함수 : Arcface loss function 사용
 기존 Softmax loss functuion인
@@ -52,7 +68,12 @@ Softmax function하고 Arcface funtion을 그림으로 비교해 보면 다음�
 # Ⅴ. Related Work
 ArcFace: Additive Angular Margin Loss for Deep Face Recognition
 
+https://www.technologyreview.com/2022/02/23/1045416/10-breakthrough-technologies-2022
+
 https://github.com/whitesoonguh/CnA_Arcface
 
 https://www.kaggle.com/datasets/atulanandjha/lfwpeople
+
+https://amber-chaeeunk.tistory.com/24
+
 # Ⅵ. Conclusion
