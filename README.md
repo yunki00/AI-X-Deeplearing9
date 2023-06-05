@@ -36,12 +36,18 @@ https://www.kaggle.com/datasets/atulanandjha/lfwpeople
 
 convolution이라는 단어는 합성곱이라는 뜻으로 CNN에서 사용하는 이미지에 대한 convolution 연산은 원래 이미지 데이터와 convolution filter의 두 행렬의 각각의 성분을 곱한 뒤 더한 값입니다. 따라서 아래 사진과 같이 나타납니다.
 
-1. <img width="321" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/de20eb11-54ea-488c-8c90-69f7247046da">
-2. <img width="364" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/8c5b2003-e761-4d5f-a4a3-921dc3fb5b92">
+1.
+
+<img width="321" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/de20eb11-54ea-488c-8c90-69f7247046da">
+2. 
+
+<img width="364" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/8c5b2003-e761-4d5f-a4a3-921dc3fb5b92">
 
 위 과정을 반복하면 아래와 같이 출력데이터가 나오게 됩니다.
 
-3. <img width="526" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c509cba4-325d-45fe-bbf8-8d369fb972f4">
+3. 
+
+<img width="526" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c509cba4-325d-45fe-bbf8-8d369fb972f4">
 
 위 사진은 기존 이미지의 데이터를 그대로 convolution filter를 사용하면 다음계층으로 전달 될 이미지 데이터의 크기가 다음과 같이 정해지게 됩니다.
 O = N - F + 1
@@ -50,30 +56,44 @@ O = N - F + 1
 
 따라서 우리의 필요에 따라 stride의 크기를 다르게 하거나 padding 또는 pooling연산을 이용하여 output 데이터를 우리가 원하는 크기로 만들 수 있습니다. 
 #### padding : convolution 연산을 하기 전 이미지 데이터 주변에 특정 값을 채워 크기를 늘리는 방법
-4. <img width="391" alt="pad" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3288a64b-89a3-478b-a7df-86c3995f7457">
+4. 
+
+<img width="391" alt="pad" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3288a64b-89a3-478b-a7df-86c3995f7457">
 
 #### pooling : 입력데이터를 일정 크기의 영역으로 나누고 그 안에 있는 데이터들의 요약통계량(평균, 최댓값, 최솟값, 가중합산)을 사용하여 데이터의 크기를 줄이는 방법
-5. <img width="515" alt="pool" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c652fcc5-8042-4c6d-a391-99fb4ecb832c">
+5. 
+
+<img width="515" alt="pool" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c652fcc5-8042-4c6d-a391-99fb4ecb832c">
 
 #### stride : stride는 보폭이란 의미로 필터를 적용하는 간격입니다. stride를 크게 하면 다음 그림과 같이 출력 데이터의 크기가 감소하게 됩니다.
-6. <img width="329" alt="stride" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c3bdad17-630a-4aa6-a95e-ff992547a466">
+6. 
+
+<img width="329" alt="stride" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c3bdad17-630a-4aa6-a95e-ff992547a466">
 
 #### loss function : 학습 중에 알고리즘이 얼마나 잘못 예측하는 정도를 확인하기 위한 함수입니다. 
 
 #### gradient descent : 손실함수(loss function)의 최소 지점을 찾기 위해 경사가 가장 가파른 곳을 찾아서 현재 위치에서 그 방향으로 내려가는 방법으로 손실함수의 최솟값을 찾을 수 있게 도와주는 역할을 합니다.
-7. <img width="299" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/5f95066c-5aaa-4d9f-ad14-d48b4eff93c9">
+7. 
+
+<img width="299" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/5f95066c-5aaa-4d9f-ad14-d48b4eff93c9">
 
 #### Activation fucntion : 입력 신호의 총합을 출력 신호로 변환하는 함수로서 입력신호의 총합이 활성화를 일으키는지 아닌지 정하는 역할을 합니다. 
 ex) ReLU : 
 
-8. <img width="232" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3082b8b7-4cb1-4350-ac4e-aff2ca6e97e4">
+8. 
+
+<img width="232" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3082b8b7-4cb1-4350-ac4e-aff2ca6e97e4">
 
 #### batch normalization : 각 layer에 따라서 입력 값의 분포가 다른 것의 데이터 분포를 정규화합니다
-9. <img width="443" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3bef11c2-e62e-4f2c-9f2a-777226ac343d">
+9. 
+
+<img width="443" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3bef11c2-e62e-4f2c-9f2a-777226ac343d">
 
 CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 
-10. <img width="561" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/03215c1f-99a9-4d95-bf78-ac6c5784b641">
+10.
+
+<img width="561" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/03215c1f-99a9-4d95-bf78-ac6c5784b641">
 
 ### ResNet
 기본적인 CNN구조에 layer가 일정 수준 이상으로 깊어지면 결과가 더 안 좋게 나오게 됩니다. 그래서 ResNet구조를 이용해 망이 깊어져도 더 좋은결과가 나올 수 있게 사용할 것입니다.
@@ -81,19 +101,27 @@ CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 ## 손실함수 : Arcface loss function 사용
 기존 Softmax loss functuion인
 
-11. <img width="272" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/0168ce00-cb8a-4254-84fe-525acce54037">
+11. 
+
+<img width="272" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/0168ce00-cb8a-4254-84fe-525acce54037">
 
 에서 분변력을 증가시키고 학습을 안정화하기 위해 각도에 직접적 margin penalty를 더 해준 Arcface loss funcyion을 사용할 것입니다. 이 loss function은 다음과 같습니다.
 
-12. <img width="411" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/6a9e2def-d443-4032-9a65-4c2b4e29e50b">
+12. 
+
+<img width="411" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/6a9e2def-d443-4032-9a65-4c2b4e29e50b">
 
 Softmax function하고 Arcface funtion을 그림으로 비교해 보면 다음과 같습니다.
 
-13. <img width="303" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/a7e2cff1-d07c-4207-95b6-886cc82bc424">
+13. 
+
+<img width="303" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/a7e2cff1-d07c-4207-95b6-886cc82bc424">
 
 # Ⅳ. Evaluation & Analysis
 # Ⅴ. Related Work
 ArcFace: Additive Angular Margin Loss for Deep Face Recognition : 이미지 11, 12, 13
+
+Deep Residual Learning for Image Recognition
 
 https://www.technologyreview.com/2022/02/23/1045416/10-breakthrough-technologies-2022
 
@@ -101,13 +129,15 @@ https://github.com/whitesoonguh/CnA_Arcface
 
 https://www.kaggle.com/datasets/atulanandjha/lfwpeople
 
-https://amber-chaeeunk.tistory.com/24
+https://yjjo.tistory.com/8 이미지 1, 2, 3
 
-https://yjjo.tistory.com/8
+https://amber-chaeeunk.tistory.com/24 이미지 4, 6, 10
 
-https://www.researchgate.net/figure/Commonly-used-activation-functions-a-Sigmoid-b-Tanh-c-ReLU-and-d-LReLU_fig3_335845675
+Do it! 딥러닝 교과서 이미지 5
 
-https://amber-chaeeunk.tistory.com/24
+https://process-mining.tistory.com/175 이미지 7
 
-https://gaussian37.github.io/dl-concept-batchnorm/
+https://www.researchgate.net/figure/Commonly-used-activation-functions-a-Sigmoid-b-Tanh-c-ReLU-and-d-LReLU_fig3_335845675 이미지 8
+
+https://gaussian37.github.io/dl-concept-batchnorm/ 이미지 9
 # Ⅵ. Conclusion
