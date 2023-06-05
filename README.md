@@ -50,13 +50,13 @@ O = N - F + 1
 
 따라서 우리의 필요에 따라 stride의 크기를 다르게 하거나 padding 또는 pooling연산을 이용하여 output 데이터를 우리가 원하는 크기로 만들 수 있습니다. 
 #### padding : convolution 연산을 하기 전 이미지 데이터 주변에 특정 값을 채워 크기를 늘리는 방법
-![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/d369aed6-c355-4dc6-b7a1-10a4fa07cca1)
+<img width="376" alt="pad" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/b766cc5a-494a-4ffe-b52b-7e0b911e7f61">
 
 #### pooling : 입력데이터를 일정 크기의 영역으로 나누고 그 안에 있는 데이터들의 요약통계량(평균, 최댓값, 최솟값, 가중합산)을 사용하여 데이터의 크기를 줄이는 방법
-<img width="515" alt="KakaoTalk_20230605_194212615" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c652fcc5-8042-4c6d-a391-99fb4ecb832c">
+<img width="515" alt="pool" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c652fcc5-8042-4c6d-a391-99fb4ecb832c">
 
 #### stride : stride는 보폭이란 의미로 필터를 적용하는 간격입니다. 스트라이드를 크게 하면 다음 그림과 같이 출력 데이터의 크기가 감소하게 됩니다.
-<img width="301" alt="KakaoTalk_20230605_201824740" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/503eb5ae-0df9-4e36-b83d-b8734d250a19">
+<img width="376" alt="stride" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/34bc081e-b803-43e5-8ef1-3f331ada2ab6">
 
 
 ### ResNet
