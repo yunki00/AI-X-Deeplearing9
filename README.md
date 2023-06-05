@@ -41,7 +41,7 @@ convolution이라는 단어는 합성곱이라는 뜻으로 CNN에서 사용하�
 
 위 과정을 반복하면 아래와 같이 출력데이터가 나오게 됩니다.
 
-<img width="261" alt="KakaoTalk_20230605_201810027" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/e463e820-178e-44f6-b6a8-d07204f469b9">
+<img width="391" alt="KakaoTalk_20230605_201810027" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/d23630b1-321a-48cc-ac4f-3d24640b0b58">
 
 
 위 사진은 기존 이미지의 데이터를 그대로 convolution filter를 사용하면 다음계층으로 전달 될 이미지 데이터의 크기가 다음과 같이 정해지게 됩니다.
@@ -54,10 +54,11 @@ O = N - F + 1
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/d369aed6-c355-4dc6-b7a1-10a4fa07cca1)
 
 #### pooling : 입력데이터를 일정 크기의 영역으로 나누고 그 안에 있는 데이터들의 요약통계량(평균, 최댓값, 최솟값, 가중합산)을 사용하여 데이터의 크기를 줄이는 방법
-![Uploading KakaoTalk_20230605_194212615.png…]()
+<img width="515" alt="KakaoTalk_20230605_194212615" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c652fcc5-8042-4c6d-a391-99fb4ecb832c">
 
 #### stride : stride는 보폭이란 의미로 필터를 적용하는 간격입니다. 스트라이드를 크게 하면 다음 그림과 같이 출력 데이터의 크기가 감소하게 됩니다.
-<img width="201" alt="KakaoTalk_20230605_201824740" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/edc59424-d072-4bce-a340-c56a4e1a46b5">
+<img width="301" alt="KakaoTalk_20230605_201824740" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/503eb5ae-0df9-4e36-b83d-b8734d250a19">
+
 
 ### ResNet
 기본적인 CNN구조에 layer가 일정 수준 이상으로 깊어지면 결과가 더 안 좋게 나오게 됩니다. 그래서 ResNet구조를 이용해 망이 깊어져도 더 좋은결과가 나올 수 있게 사용할 것입니다.
