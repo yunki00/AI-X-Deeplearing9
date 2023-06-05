@@ -56,8 +56,7 @@ O = N - F + 1
 <img width="515" alt="pool" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c652fcc5-8042-4c6d-a391-99fb4ecb832c">
 
 #### stride : stride는 보폭이란 의미로 필터를 적용하는 간격입니다. 스트라이드를 크게 하면 다음 그림과 같이 출력 데이터의 크기가 감소하게 됩니다.
-<img width="376" alt="stride" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/34bc081e-b803-43e5-8ef1-3f331ada2ab6">
-
+<img width="329" alt="stride" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c3bdad17-630a-4aa6-a95e-ff992547a466">
 
 ### ResNet
 기본적인 CNN구조에 layer가 일정 수준 이상으로 깊어지면 결과가 더 안 좋게 나오게 됩니다. 그래서 ResNet구조를 이용해 망이 깊어져도 더 좋은결과가 나올 수 있게 사용할 것입니다.
