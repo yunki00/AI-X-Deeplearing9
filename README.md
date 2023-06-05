@@ -70,7 +70,7 @@ O = N - F + 1
 
 <img width="515" alt="pool" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c652fcc5-8042-4c6d-a391-99fb4ecb832c">
 
-#### stride : stride는 보폭이란 의미로 필터를 적용하는 간격입니다. stride를 크게 하면 다음 그림과 같이 출력 데이터의 크기가 감소하게 됩니다. 우리의 코드에서는 2 또는 1의 stride를 사용합니다.
+#### stride : stride는 보폭이란 의미로 필터를 적용하는 간격입니다. stride를 크게 하면 다음 그림과 같이 출력 데이터의 크기가 감소하게 됩니다. 우리의 코드에서는 stride 2를 사용하여 downsample을 하거나 stride 1 사용합니다. 
 6. 
 
 <img width="329" alt="stride" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c3bdad17-630a-4aa6-a95e-ff992547a466">
