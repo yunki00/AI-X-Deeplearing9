@@ -75,7 +75,7 @@ O = N - F + 1
 
 <img width="329" alt="stride" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c3bdad17-630a-4aa6-a95e-ff992547a466">
 
-#### loss function : 학습 중에 알고리즘이 얼마나 잘못 예측하는 정도를 확인하기 위한 함수입니다. 우리의 코드에서는 Arcface loss function을 사용합니다.
+#### loss function : 학습 중에 알고리즘이 얼마나 잘못 예측하는 정도를 확인하기 위한 함수입니다. 우리의 코드에서는 Arcface loss function을 사용합니다. 또한 해당 부분은 코드의 header부분에 위치하고 있습니다. 
 
 #### gradient descent : 손실함수(loss function)의 최소 지점을 찾기 위해 경사가 가장 가파른 곳을 찾아서 현재 위치에서 그 방향으로 내려가는 방법으로 손실함수의 최솟값을 찾을 수 있게 도와주는 역할을 합니다.
 7. 
@@ -109,27 +109,33 @@ CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c16a19b6-0e59-42e5-a46a-d9b29f86a39e)
 
 ## 손실함수 : Arcface loss function 사용
-기존 Softmax loss functuion인
+기존 ResNet을 이용한 얼굴인식 모델의 손실함수인 Softmax loss functuion
 
 12. 
 
 <img width="272" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/0168ce00-cb8a-4254-84fe-525acce54037">
 
-에서 분변력을 증가시키고 학습을 안정화하기 위해 각도에 직접적 margin penalty를 더 해준 Arcface loss funcyion을 사용할 것입니다. 이 loss function은 다음과 같습니다.
+에서 내적연산을 각도를 포함한 연산으로 다시 적어보면 다음과 같이 됩니다.
 
-13. 
+13.
+
+<img width="346" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c98f7106-2c65-4110-9b16-32abf581a904">
+
+다음 연산에서 클래스 간 각도에 직접적 margin penalty(m)를 더 해서 계산한 것을 Arcface loss function
+
+14. 
 
 <img width="411" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/6a9e2def-d443-4032-9a65-4c2b4e29e50b">
 
-Softmax function하고 Arcface funtion을 그림으로 비교해 보면 다음과 같습니다.
+이라고 합니다. 그렇게 되면 서로 다른 클래스 간 각도의 차이를 더해 주어 더 큰 격차를 만들 수 있어 분변력을 증가시키고 학습을 안정화할 수 있기 때문에 우리는 손실함수로서 Arcface loss function을 사용하겠습니다. Softmax function하고 Arcface funtion을 그림으로 비교해 보면 다음과 같습니다.
 
-14. 
+15. 
 
 <img width="303" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/a7e2cff1-d07c-4207-95b6-886cc82bc424">
 
 # Ⅳ. Evaluation & Analysis
 # Ⅴ. Related Work
-ArcFace: Additive Angular Margin Loss for Deep Face Recognition : 이미지 12, 13, 14
+ArcFace: Additive Angular Margin Loss for Deep Face Recognition : 이미지 12, 13, 14, 15
 
 Deep Residual Learning for Image Recognition : 이미지 11
 
