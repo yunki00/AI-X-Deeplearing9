@@ -8,8 +8,12 @@
       
 # Index
 ### Ⅰ. Proposal
+#### Motivation
+#### Goal
 ### Ⅱ. Datasets
 ### Ⅲ. Methodlogy
+#### CNN기반의 ResNet구조
+#### 손실함수 : Arcface loss function 사용
 ### Ⅳ. Evaluation & Analysis
 ### Ⅴ. Related Work
 ### Ⅵ. Conclusion
@@ -53,7 +57,7 @@ convolution이라는 단어는 합성곱이라는 뜻으로 CNN에서 사용하�
 위 사진은 기존 이미지의 데이터를 그대로 convolution filter를 사용하면 다음계층으로 전달 될 이미지 데이터의 크기가 다음과 같이 정해지게 됩니다.
 O = N - F + 1
 
-(N : 입력데이터의 크기 F : convolution filter의 크기 O : 출력데이터 크기 )
+(N : 입력데이터의 크기, F : kernel의 크기, O : 출력데이터 크기 )
 
 따라서 우리의 필요에 따라 stride의 크기를 다르게 하거나 padding 또는 pooling연산을 이용하여 output 데이터를 우리가 원하는 크기로 만들 수 있습니다. 
 #### padding : convolution 연산을 하기 전 이미지 데이터 주변에 특정 값을 채워 크기를 늘리는 방법입니다.
