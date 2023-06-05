@@ -56,39 +56,40 @@ O = N - F + 1
 (N : 입력데이터의 크기 F : convolution filter의 크기 O : 출력데이터 크기 )
 
 따라서 우리의 필요에 따라 stride의 크기를 다르게 하거나 padding 또는 pooling연산을 이용하여 output 데이터를 우리가 원하는 크기로 만들 수 있습니다. 
-#### padding : convolution 연산을 하기 전 이미지 데이터 주변에 특정 값을 채워 크기를 늘리는 방법
+#### padding : convolution 연산을 하기 전 이미지 데이터 주변에 특정 값을 채워 크기를 늘리는 방법입니다.
 4. 
 
 <img width="391" alt="pad" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3288a64b-89a3-478b-a7df-86c3995f7457">
 
-#### pooling : 입력데이터를 일정 크기의 영역으로 나누고 그 안에 있는 데이터들의 요약통계량(평균, 최댓값, 최솟값, 가중합산)을 사용하여 데이터의 크기를 줄이는 방법
+#### pooling : 입력데이터를 일정 크기의 영역으로 나누고 그 안에 있는 데이터들의 요약통계량(평균, 최댓값, 최솟값, 가중합산)을 사용하여 데이터의 크기를 줄이는 방법입니다. 우리의 코드에서는 average pooling을 사용합니다.
 5. 
 
 <img width="515" alt="pool" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c652fcc5-8042-4c6d-a391-99fb4ecb832c">
 
-#### stride : stride는 보폭이란 의미로 필터를 적용하는 간격입니다. stride를 크게 하면 다음 그림과 같이 출력 데이터의 크기가 감소하게 됩니다.
+#### stride : stride는 보폭이란 의미로 필터를 적용하는 간격입니다. stride를 크게 하면 다음 그림과 같이 출력 데이터의 크기가 감소하게 됩니다. 우리의 코드에서는 2 또는 1의 stride를 사용합니다.
 6. 
 
 <img width="329" alt="stride" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c3bdad17-630a-4aa6-a95e-ff992547a466">
 
-#### loss function : 학습 중에 알고리즘이 얼마나 잘못 예측하는 정도를 확인하기 위한 함수입니다. 
+#### loss function : 학습 중에 알고리즘이 얼마나 잘못 예측하는 정도를 확인하기 위한 함수입니다. 우리의 코드에서는 Arcface loss function을 사용합니다.
 
 #### gradient descent : 손실함수(loss function)의 최소 지점을 찾기 위해 경사가 가장 가파른 곳을 찾아서 현재 위치에서 그 방향으로 내려가는 방법으로 손실함수의 최솟값을 찾을 수 있게 도와주는 역할을 합니다.
 7. 
 
 <img width="299" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/5f95066c-5aaa-4d9f-ad14-d48b4eff93c9">
 
-#### Activation fucntion : 입력 신호의 총합을 출력 신호로 변환하는 함수로서 입력신호의 총합이 활성화를 일으키는지 아닌지 정하는 역할을 합니다. 
-ex) ReLU : 
+#### Activation fucntion : 입력 신호의 총합을 출력 신호로 변환하는 함수로서 입력신호의 총합이 활성화를 일으키는지 아닌지 정하는 역할을 합니다. 우리의 코드에서는 ReLU을 사용합니다. 
 
 8. 
 
 <img width="232" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3082b8b7-4cb1-4350-ac4e-aff2ca6e97e4">
 
-#### batch normalization : 각 layer에 따라서 입력 값의 분포가 다른 것의 데이터 분포를 정규화합니다
+#### batch normalization : 각 layer에 따라서 입력 값의 분포가 다른 것의 데이터 분포를 정규화합니다.
 9. 
 
 <img width="443" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/3bef11c2-e62e-4f2c-9f2a-777226ac343d">
+
+
 
 CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 
@@ -97,7 +98,7 @@ CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 <img width="561" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/03215c1f-99a9-4d95-bf78-ac6c5784b641">
 
 ### ResNet
-기본적인 CNN구조를 사용하면 layer가 일정 수준 이상으로 깊어지면 자유 파라미터들의 개수가 증가하여 학습의 하락을 유발합니다. 이것을 방지하기 위해 layer에 input x의 identity인 x를 더해줘서 연산을 수행하는 ResNet을 사용하여 layer를 깊게 만들어도 학습의 하락이 이뤄지지 않고 잘 학습되는 것을 확인 할 수 있습니다.
+기본적인 CNN구조를 사용하면 layer가 일정 수준 이상으로 깊어지면 자유 파라미터들의 개수가 증가하여 학습의 하락을 유발합니다. 이것을 방지하기 위해 layer에 input x의 identity인 x를 더해줘서 연산을 수행하는 ResNet을 사용하여 layer를 깊게 만들어도 학습의 하락이 이뤄지지 않고 잘 학습되는 것을 확인 할 수 있습니다. 우리의 코드에서는 ResNet18을 사용합니다.
 
 11.
 
