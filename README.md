@@ -8,12 +8,12 @@
       
 # Index
 ## Ⅰ. Proposal
-### * Motivation
-### Goal
+### · Motivation
+### · Goal
 ## Ⅱ. Datasets
 ## Ⅲ. Methodlogy
-### CNN기반의 ResNet구조
-### 손실함수 : Arcface loss function 사용
+### · CNN기반의 ResNet구조
+### · 손실함수 : Arcface loss function 사용
 ## Ⅳ. Evaluation & Analysis
 ## Ⅴ. Related Work
 ## Ⅵ. Conclusion
