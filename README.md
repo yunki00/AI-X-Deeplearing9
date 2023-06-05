@@ -73,7 +73,7 @@ ex) ReLU :
 
 CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 
-<img width="540" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/a6660448-15ad-47b0-8170-61ef70245291">
+<img width="561" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/03215c1f-99a9-4d95-bf78-ac6c5784b641">
 
 ### ResNet
 기본적인 CNN구조에 layer가 일정 수준 이상으로 깊어지면 결과가 더 안 좋게 나오게 됩니다. 그래서 ResNet구조를 이용해 망이 깊어져도 더 좋은결과가 나올 수 있게 사용할 것입니다.
