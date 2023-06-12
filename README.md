@@ -33,9 +33,9 @@ LFW Face Database를 사용하겠습니다.
 
 예시로는 다음과 같습니다.
 
-<img width = "100" alt = "image" src \"https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/30db4a93-6be3-4c7a-89ca-cf1f3dba1125">
+<img width = "100" alt = "image" src ="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/30db4a93-6be3-4c7a-89ca-cf1f3dba1125">
 
-<img width = "100" alt = "image" src \"https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/92d63c2c-a6bc-40fe-9205-75c4a4187d85">
+<img width = "100" alt = "image" src ="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/92d63c2c-a6bc-40fe-9205-75c4a4187d85">
 
 
 https://www.kaggle.com/datasets/atulanandjha/lfwpeople
