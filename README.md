@@ -121,7 +121,7 @@ CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c16a19b6-0e59-42e5-a46a-d9b29f86a39e)
 
-위의 구조들을 활용하여, 다음의 코드를 https://github.com/whitesoonguh/CnA_Arcface를 참고해 구현하였습니다.
+위의 구조들을 활용하여, 다음의 코드를 https://github.com/whitesoonguh/CnA_Arcface 를 참고해 구현하였습니다.
 
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/37a01716-0590-48c8-bf7c-b7f356961054)
 
