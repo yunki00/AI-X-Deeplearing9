@@ -29,7 +29,7 @@ MIT가 2022년에 선정한 10대 기술 중 하나로, 비밀번호를 대체�
 # Ⅱ. Datasets
 LFW Face Database를 사용하겠습니다.
 
-해당 데이터 셋은 1680명의 사람들의 13000장 이상의 사진들로 이루어져있습니다. 각각의 사진 속 인물의 이름이 라벨로 붙어있고 해당 사진의 확장자는 JPEG으로 되어있습니다. 또한 해당 사진들의 픽셀은 62*47로 이루어져있습니다.
+해당 데이터 셋은 5748명의 사람들의 13000장 이상의 사진들로 이루어져있습니다. 각각의 사진 속 인물의 이름이 라벨로 붙어있고 해당 사진의 확장자는 JPEG으로 되어있습니다. 또한 해당 사진들의 픽셀은 62*47로 이루어져있습니다.
 
 https://www.kaggle.com/datasets/atulanandjha/lfwpeople
 
@@ -58,7 +58,7 @@ convolution이라는 단어는 합성곱이라는 뜻으로 CNN에서 사용하�
 
 O = N - F + 1
 
-(N : 입력데이터의 크기, F : kernel의 크기, O : 출력데이터 크기 )
+(N : 입력데이터의 크기, F : 필터(kernel)의 크기, O : 출력데이터 크기 )
 
 따라서 우리의 필요에 따라 stride의 크기를 다르게 하거나 padding 또는 pooling연산을 이용하여 output 데이터를 우리가 원하는 크기로 만들 수 있습니다. 
 #### padding : convolution 연산을 하기 전 이미지 데이터 주변에 특정 값을 채워 크기를 늘리는 방법입니다.
@@ -136,6 +136,8 @@ CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 <img width="303" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/a7e2cff1-d07c-4207-95b6-886cc82bc424">
 
 # Ⅳ. Evaluation & Analysis
+
+
 # Ⅴ. Related Work
 ArcFace: Additive Angular Margin Loss for Deep Face Recognition : 이미지 12, 13, 14, 15
 
