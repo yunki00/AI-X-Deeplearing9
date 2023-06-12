@@ -141,6 +141,7 @@ CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 pyorch 사용
 
 Hyper parameter setting
+
 Dataset & Training Loop
       img_shape = (3,112,112)
       batch_size = 1024
@@ -157,9 +158,9 @@ Optimizer
       weight_decay = 1e-3
       beta1, beta2 = 0.9, 0.999
       
-# of classes :  5748
+The number of classes :  5748
 Image shape :  (3, 112, 112)
-# of images :  10560
+The number of images :  10560
 
 
 # Ⅴ. Related Work
