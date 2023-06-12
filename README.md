@@ -46,7 +46,8 @@ LFW Face Database를 사용하겠습니다.
 
 
 
-출처: https://www.kaggle.com/datasets/atulanandjha/lfwpeople
+데이터 출처: https://www.kaggle.com/datasets/atulanandjha/lfwpeople
+
 
 # Ⅲ. Methodlogy
 ## CNN기반의 ResNet구조
