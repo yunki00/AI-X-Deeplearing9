@@ -1,4 +1,6 @@
-# AI-X-Deeplearing
+### https://youtu.be/vGKdDwf2EqE
+
+# AI+X : DeepLearing
 
 # Title : Arcface 논문에 따른 얼굴 인식 모델 구현
 
