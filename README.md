@@ -137,14 +137,24 @@ CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 
 # Ⅳ. Evaluation & Analysis
 
-컴퓨터 사양: AMD EPYC 7543P (2.8GHZ)	NVIDIA A100 X 2	512GB RAM
+컴퓨터 사양
+AMD EPYC 7543P (2.8GHZ)	
+
+NVIDIA A100 X 2	
+
+512GB RAM
+
 pyorch 사용
 
 Hyper parameter setting
 
 Dataset & Training Loop
+
+
       img_shape = (3,112,112)
+      
       batch_size = 1024
+      
       epoch = 300
 
 margins for arcface
