@@ -124,7 +124,8 @@ CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/37a01716-0590-48c8-bf7c-b7f356961054)
 
-Convolution network의 구조가 ResNet에서 반복적으로 사용이 되기 때문에, 편의를 위해 블록 형태로 구현하였습니다. \\
+Convolution network의 구조가 ResNet에서 반복적으로 사용이 되기 때문에, 편의를 위해 블록 형태로 구현하였습니다. 
+
 
 ConvBlock은 2 dimensional convolution network와 batch normalization이 연속적으로 사용되는 형태이며, ic, oc, k, s, p는 각각 input channel, output channel, kernel size, stride size, padding size를 의미합니다. 또한 activation function으로 Relu 함수를 선언해주었습니다.
 
@@ -134,7 +135,7 @@ ConvBlock은 2 dimensional convolution network와 batch normalization이 연속�
 
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/2f89575b-981a-40d3-8f0a-f7d918cce75f)
 
-모델(ResNet)을 거치며, 이미지는 실수형의 벡터로 바뀌게 됩니다. 이 과
+모델(ResNet)을 거치며, 이미지는 실수형의 벡터로 바뀌게 됩니다. ResNet은 앞서 말했듯, 레이어를 거치기 전의 인풋과 레이어를 거치고 난 후의 아웃풋을 더해야하는데, 이미지가 실수형의 벡터로 바뀌면서 점점 차원이 줄어들게 됩니다. 그대로 더하게 되면, 차원이 맞지 않는다는 문제가 생겨서, downsample이라는 인풋을 추가로 받고, 그를 활용해, residual leanring을 시켜준 것입니다. 마지막으로 batch 단위로 normalization
 
 ## 손실함수 : Arcface loss function 사용
 
