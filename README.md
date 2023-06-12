@@ -238,7 +238,7 @@ The number of test images :  2673
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/b9074514-e78c-4087-84dc-0a01f52ab6e6)
 
 
-loss값은 계속해서 떨어지지만, evaluation accuracy는 잘 늘지 않는 것을 관찰할 수 있는데, 이는 모델이 과적합이 되고 있을 가능성을 보여줍니다. 또한 train dataset과 test dataset을 구분하는 과정에서, 원래는 앞의 10560개를 train set으로 그 이후의 것을 test set으로 하였었는데, 이로 진행하니 evaluation accuracy가 0.2%가 나오게 되었습니다. 이 이유로 사진이 각 아이덴티티 별로 인덱스가 연속해서 있어서, 뒤쪽의 아이덴티티는 학습을 잘 못하는 것 때문이라고 생각하였습니다. 그래서 train set과 test set의 index를 랜덤으로 추출하는 과정을 추가하여 정확도를 14%로 올릴 수 있었습니다. 그럼에도 낮은 정확도를 가지는데, 이를 해결하기 위해서는, 더 깊은 모델과 더 많은 train dataset을 활용하는 것이 해결방안이라고 생각합니다.
+loss값은 계속해서 떨어지지만, evaluation accuracy는 잘 늘지 않는 것을 관찰할 수 있는데, 이는 모델이 과적합이 되고 있을 가능성을 보여줍니다. 또한 train dataset과 test dataset을 구분하는 과정에서, 원래는 앞의 10560개를 train set으로 그 이후의 것을 test set으로 하였었는데, 이로 진행하니 evaluation accuracy가 0.2%가 나오게 되었습니다. 이 이유로 사진이 각 아이덴티티 별로 인덱스가 연속해서 있어서, 뒤쪽의 아이덴티티는 학습을 잘 못하는 것 때문이라고 생각하였습니다. 그래서 train set의 index를 랜덤으로 10560개를 추출하고 나머지를 test set으로 사용하는 과정을 추가하여 정확도를 14%로 올릴 수 있었습니다. 그럼에도 낮은 정확도를 가지는데, 이를 해결하기 위해서는, 더 깊은 모델과 더 많은 train dataset을 활용하는 것이 해결방안이라고 생각합니다.
 
 
 
