@@ -165,7 +165,7 @@ ConvBlock은 2 dimensional convolution network와 batch normalization이 연속�
 
 <img width="411" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/6a9e2def-d443-4032-9a65-4c2b4e29e50b">
 
-margin을 더함으로써, 모델은 학습을 할 때, 모래주머니를 차고 학습을 하는 것과 비슷한 효과를 가지게 됩니다. 더 어려운 학습을 하고 이 학습이 수렴했을 때, margin을 더했을때와 더하지 않았을 때 정확도가 차이가 나게 됩니다.
+기존의 학습의 목적은 같은 아이덴티티의 벡터를 모아주는 것 입니다. margin을 더함으로써, 같은 아이덴티티라면 일부러 각도가 더 멀어지게 한 뒤 학습을 합니다. 이는 모델이 학습을 할 때, 모래주머니를 차고 학습을 하는 것과 비슷한 효과를 가지게 됩니다. 더 어려운 학습을 하고 이 학습이 끝났을 때, 같은 아이덴티티로부터의 벡터는 더욱 한 곳으로 모여질 것이고, 이로 인해서 margin을 더했을때와 더하지 않았을 때 정확도가 차이가 나게 됩니다.
 
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/9759f7b6-abba-4b55-8c01-48071e9254f5)
 
