@@ -145,7 +145,7 @@ ConvBlock은 2 dimensional convolution network와 batch normalization이 연속�
 #### gradient descent : 손실함수(loss function)의 최소 지점을 찾기 위해 경사가 가장 가파른 곳을 찾아서 현재 위치에서 그 방향으로 내려가는 방법으로 손실함수의 최솟값을 찾을 수 있게 도와주는 역할을 합니다. 이를 도식화하면 밑의 그림과 같습니다.
 7. 
 
-<img width="299" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/5f95066c-5aaa-4d9f-ad14-d48b4eff93c9">이
+<img width="299" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/5f95066c-5aaa-4d9f-ad14-d48b4eff93c9">
 
 기존 ResNet을 이용한 얼굴인식 모델의 손실함수인 Softmax loss functuion은 다음과 같습니다.
 
@@ -268,8 +268,8 @@ https://gaussian37.github.io/dl-concept-batchnorm/ : 이미지 9
 # Ⅵ. Conclusion
 현재의 train을 할 때, 일반적인 노트북으로 진행을 하게 되면 한 epoch당 짧으면 30초 길면 5분정도로 나오는 것을 확인하였습니다. 그래서 지금의 결과를 얻기 위해 그래픽 카드가 있는 환경에서 실험을 진행하였습니다. 그런데도 정확도가 낮은 것을 관찰할 수가 있는데, 이는 train set의 개수(10560)가 일반적인 얼굴인식을 할 때 요구되는 train set(500만 장 이상)의 개수보다 현저히 적기 때문이라고 생각해볼 수 있었습니다. Deep learning을 하기 위해서는 막대한 양의 데이터와 그를 처리하기 위한 computing power가 필요하다는 것을 알게 되었고, 충분히 갖춰지지 않은 상황에서는 딥러닝을 활용하는 방안이 아니라, 다른 방안을 찾는 것이 오히려 나을 수 있겠다는 결론을 얻을 수 있었습니다. 다만 원래 저희가 목표했던, CNN, ResNet에 대한 이해와 그를 구현하는 과정은 충분히 달성할 수 있었습니다.
 
-
-
+#### 김민수 : 코드 작성 / Evaluation & Analysis
+#### 김윤기 : 블로그 작성 / Methodlogy / 유튜브 영상제작
 
 
 
