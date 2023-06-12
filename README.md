@@ -122,6 +122,14 @@ CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c16a19b6-0e59-42e5-a46a-d9b29f86a39e)
 
+위의 구조들을 활용하여, 다음의 코드를 https://github.com/whitesoonguh/CnA_Arcface를 참고해 구현하였습니다.
+
+![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/9af7a5fb-5d70-483d-b5a8-9483f32ff7e1)
+
+Convolution network의 구조가 ResNet에서 반복적으로 사용이 되기 때문에, 편의를 위해 블록 형태로 구현하였습니다. \
+
+ConvBlock은 2 dimensional convolution network와 batch normalization이 연속적으로 사용되는 형태이며, ic, oc, k, s, p는 각각 input channel, output channel, kernel size, stride size, padding size
+
 ## 손실함수 : Arcface loss function 사용
 
 #### loss function : 학습 중에 알고리즘이 얼마나 잘못 예측하는 정도를 확인하기 위한 함수입니다. 우리의 코드에서는 Arcface loss function을 사용합니다. 또한 해당 부분은 코드의 header부분에 위치하고 있습니다. 
