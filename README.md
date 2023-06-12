@@ -38,6 +38,13 @@ LFW Face Database를 사용하겠습니다.
 <img width = "300" alt = "image" src ="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/92d63c2c-a6bc-40fe-9205-75c4a4187d85">
 
 
+<img width = "300" alt = "image" src ="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/71e67b26-d0f8-4635-9a9f-fbd0260f7bf6">
+
+<img width = "300" alt = "image" src ="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/84f15076-cf95-45f0-870e-2edd23516fe4">
+
+
+
+
 출처: https://www.kaggle.com/datasets/atulanandjha/lfwpeople
 
 # Ⅲ. Methodlogy
