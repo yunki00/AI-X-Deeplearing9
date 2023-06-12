@@ -137,6 +137,30 @@ CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 
 # Ⅳ. Evaluation & Analysis
 
+컴퓨터 사양: AMD EPYC 7543P (2.8GHZ)	NVIDIA A100 X 2	512GB RAM
+pyorch 사용
+
+Hyper parameter setting
+Dataset & Training Loop
+      img_shape = (3,112,112)
+      batch_size = 1024
+      epoch = 300
+
+margins for arcface
+      emb_size = 512
+      scale = 64
+      margin = 0.5
+
+Optimizer
+      lr_backbone = 0.01
+      lr_header = 0.01
+      weight_decay = 1e-3
+      beta1, beta2 = 0.9, 0.999
+      
+# of classes :  5748
+Image shape :  (3, 112, 112)
+# of images :  10560
+
 
 # Ⅴ. Related Work
 ArcFace: Additive Angular Margin Loss for Deep Face Recognition : 이미지 12, 13, 14, 15
@@ -161,3 +185,4 @@ https://www.researchgate.net/figure/Commonly-used-activation-functions-a-Sigmoid
 
 https://gaussian37.github.io/dl-concept-batchnorm/ : 이미지 9
 # Ⅵ. Conclusion
+
