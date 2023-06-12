@@ -165,6 +165,8 @@ margins for arcface
       scale = 64
       
       margin = 0.5
+      
+emb_size는 embedding size인데 이는 이미지가 모델을 거치면 실수형 데이터가 되는데, 그 실수형 데이터를 해당 차원의 벡터에 해당합니다.
 
 Optimizer
 
