@@ -128,6 +128,14 @@ Convolution network의 구조가 ResNet에서 반복적으로 사용이 되기 �
 
 ConvBlock은 2 dimensional convolution network와 batch normalization이 연속적으로 사용되는 형태이며, ic, oc, k, s, p는 각각 input channel, output channel, kernel size, stride size, padding size를 의미합니다. 또한 activation function으로 Relu 함수를 선언해주었습니다.
 
+![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/4ded1427-623a-4ada-ae66-52deabec4906)
+
+![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/1483370d-b8a1-449a-b93c-e4d5a6a36f50)
+
+![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/2f89575b-981a-40d3-8f0a-f7d918cce75f)
+
+모델(ResNet)을 거치며, 이미지는 실수형의 벡터로 바뀌게 됩니다. 이 과
+
 ## 손실함수 : Arcface loss function 사용
 
 #### loss function : 학습 중에 알고리즘이 얼마나 잘못 예측하는 정도를 확인하기 위한 함수입니다. 우리의 코드에서는 Arcface loss function을 사용합니다. 또한 해당 부분은 코드의 header부분에 위치하고 있습니다. 
