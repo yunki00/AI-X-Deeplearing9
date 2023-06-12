@@ -128,7 +128,7 @@ CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 
 Convolution network의 구조가 ResNet에서 반복적으로 사용이 되기 때문에, 편의를 위해 블록 형태로 구현하였습니다. \\
 
-ConvBlock은 2 dimensional convolution network와 batch normalization이 연속적으로 사용되는 형태이며, ic, oc, k, s, p는 각각 input channel, output channel, kernel size, stride size, padding size를 의미합니다.
+ConvBlock은 2 dimensional convolution network와 batch normalization이 연속적으로 사용되는 형태이며, ic, oc, k, s, p는 각각 input channel, output channel, kernel size, stride size, padding size를 의미합니다. 또한 activation function으로 Relu 함수를 선언해주었습니다.
 
 ## 손실함수 : Arcface loss function 사용
 
