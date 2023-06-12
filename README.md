@@ -147,7 +147,7 @@ CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 
       pyorch 사용
 
-Hyper parameter setting
+#### Hyper parameter setting
 
 Dataset & Training Loop
 
