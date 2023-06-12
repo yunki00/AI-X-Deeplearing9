@@ -226,7 +226,17 @@ The number of test images :  2673
 
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c4ac90ad-59f6-4d97-9df6-966d9ddd16e2)
 
-이제 train을 시키는 부분을 살펴보겠습니다. backbone은 
+이제 train을 시키는 부분을 살펴보겠습니다. backbone은 Resnet18 로, header는 ArcFaceHeader로 정의할 것 입니다. optim_header와 optim_backbone은 학습을 더 잘 수렴하게 도와주게 하기 위한 장치입니다. eval을 할 때와 train을 할 때 모드를 바꿔주었고, 10 epoch마다 모델이 저장되도록 하였습니다. 100 epoch
+
+![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/2748f5b2-c361-4cc3-a9a1-85d539f3c8b6)
+
+
+![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/87c0f922-d38e-4313-bdf7-25f2d1ba0afb)
+
+
+![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/b9074514-e78c-4087-84dc-0a01f52ab6e6)
+
+
 
 
 
