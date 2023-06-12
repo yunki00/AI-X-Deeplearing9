@@ -159,19 +159,28 @@ Dataset & Training Loop
       epoch = 300
 
 margins for arcface
+
       emb_size = 512
+      
       scale = 64
+      
       margin = 0.5
 
 Optimizer
+
       lr_backbone = 0.01
+      
       lr_header = 0.01
+      
       weight_decay = 1e-3
-      beta1, beta2 = 0.9, 0.999
+      
       
 The number of classes :  5748
+
 Image shape :  (3, 112, 112)
+
 The number of images :  10560
+
 
 
 # Ⅴ. Related Work
