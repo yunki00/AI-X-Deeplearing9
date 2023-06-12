@@ -57,9 +57,7 @@ convolution이라는 단어는 합성곱이라는 뜻으로 CNN에서 사용하�
 
 1.
 
-<img width="321" alt="image" src="
-
-https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/de20eb11-54ea-488c-8c90-69f7247046da">
+<img width="321" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/de20eb11-54ea-488c-8c90-69f7247046da">
 
 2. 
 
