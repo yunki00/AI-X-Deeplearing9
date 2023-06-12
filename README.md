@@ -168,6 +168,7 @@ margin을 더함으로써, 모델은 학습을 할 때, 모래주머니를 차�
 
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/9759f7b6-abba-4b55-8c01-48071e9254f5)
 
+이를 코드로 구현하면, 위와 같습니다. marginal_score는 cos_score에서 margin을 더해주는 값을 대체하는 역할을 합니다. 그 값을 scaling을 해준뒤에 CrossEntropyLoss
 
 # Ⅳ. Evaluation & Analysis
 
