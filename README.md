@@ -136,7 +136,7 @@ ConvBlock은 2 dimensional convolution network와 batch normalization이 연속�
 
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/2f89575b-981a-40d3-8f0a-f7d918cce75f)
 
-모델(ResNet)을 거치며, 이미지는 실수형의 벡터로 바뀌게 됩니다. ResNet은 앞서 말했듯, 레이어를 거치기 전의 인풋과 레이어를 거치고 난 후의 아웃풋을 더함으로써, 모델이 인풋의 변화량을 학습하게 됩니다. 이미지가 실수형의 벡터로 바뀌며 점점 차원이 줄어들게 되는데, 그대로 더하게 된다면, 차원이 맞지 않는다는 문제가 생기게 됩니다. 이때문에 downsample이라는 인풋을 추가로 받고, 그를 활용해, residual leanring을 시켜준 것입니다. 마지막으로 batch 단위로 normalization을 거치고 아웃풋을 내게 됩니다.
+모델(ResNet)을 거치며, 이미지는 실수형의 벡터로 바뀌게 됩니다. ResNet은 앞서 말했듯, 레이어를 거치기 전의 인풋과 레이어를 거치고 난 후의 아웃풋을 더함으로써, 모델이 인풋의 변화량을 학습하게 됩니다. 이미지가 실수형의 벡터로 바뀌며 점점 차원이 줄어들게 되는데, 그대로 더하게 된다면, 차원이 맞지 않는다는 문제가 생기게 됩니다. 이 때문에 downsample이라는 인풋을 추가로 받고, 그를 활용해, residual leanring을 시켜준 것입니다. 마지막으로 batch 단위로 normalization을 거치고 아웃풋을 내게 됩니다.
 
 ## 손실함수 : Arcface loss function 사용
 
