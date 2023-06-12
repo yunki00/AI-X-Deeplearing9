@@ -179,7 +179,13 @@ The number of classes :  5748
 
 Image shape :  (3, 112, 112)
 
-The number of images :  10560
+The number of images :  13233
+
+The number of train images :  10560
+
+The number of test images :  2673
+
+
 
 
 
