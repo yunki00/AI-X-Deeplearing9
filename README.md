@@ -1,4 +1,4 @@
-### https://youtu.be/vGKdDwf2EqE
+### Video/Audio link : https://youtu.be/vGKdDwf2EqE
 
 # AI+X : DeepLearing
 
