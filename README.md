@@ -224,6 +224,10 @@ The number of train images :  10560
 
 The number of test images :  2673
 
+![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c4ac90ad-59f6-4d97-9df6-966d9ddd16e2)
+
+이제 train을 시키는 부분을 살펴보겠습니다. backbone은 
+
 
 
 
