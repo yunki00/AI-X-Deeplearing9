@@ -226,7 +226,7 @@ The number of test images :  2673
 
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c4ac90ad-59f6-4d97-9df6-966d9ddd16e2)
 
-이제 train을 시키는 부분을 살펴보겠습니다. backbone은 Resnet18 로, header는 ArcFaceHeader로 정의할 것 입니다. optim_header와 optim_backbone은 학습을 더 잘 수렴하게 도와주게 하기 위한 장치입니다. eval을 할 때와 train을 할 때 모드를 바꿔주었고, 10 epoch마다 모델이 저장되도록 하였습니다. 100 epoch
+이제 train을 시키는 부분을 살펴보겠습니다. backbone은 Resnet18 로, header는 ArcFaceHeader로 정의할 것 입니다. optim_header와 optim_backbone은 학습을 더 잘 수렴하게 도와주게 하기 위한 장치입니다. eval을 할 때와 train을 할 때 모드를 바꿔주었고, 10 epoch마다 모델이 저장되도록 하였습니다. 100 epoch마다 결과를 보면 다음과 같습니다.
 
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/2748f5b2-c361-4cc3-a9a1-85d539f3c8b6)
 
@@ -237,8 +237,7 @@ The number of test images :  2673
 ![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/b9074514-e78c-4087-84dc-0a01f52ab6e6)
 
 
-
-
+loss값은 계속해서 떨어지지만, evaluation accuracy는 잘 늘지 않는 것을 관찰할 수 있는데, 이는 모델이 과적합이 되고 있을 가능성을 보여줍니다. 또한 train dataset과 test dataset을 구분하는 과정에서, 원래는 앞의 10560개를 train set으로 그 이후의 것을 test set으로 하였었는데, 이로 진행하니 evaluation accuracy가 0.2%가 나오게 돼서, train set과 test set의 index를 랜덤으로 추출하는 과정을 추가하여 정확도를 14%로 올릴 수 있었습니다. 그럼에도 낮은 정확도를 가지는데, 이를 해결하기 위해서는, 더 깊은 모델과 더 많은 train dataset을 활용하는 것이 해결방안이라고 생각합니다.
 
 
 
@@ -264,5 +263,9 @@ https://process-mining.tistory.com/175 : 이미지 7
 https://www.researchgate.net/figure/Commonly-used-activation-functions-a-Sigmoid-b-Tanh-c-ReLU-and-d-LReLU_fig3_335845675 : 이미지 8
 
 https://gaussian37.github.io/dl-concept-batchnorm/ : 이미지 9
+
 # Ⅵ. Conclusion
+
+
+
 
