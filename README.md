@@ -141,34 +141,33 @@ ConvBlock은 2 dimensional convolution network와 batch normalization이 연속�
 
 #### loss function : 학습 중에 알고리즘이 얼마나 잘못 예측하는 정도를 확인하기 위한 함수입니다. 우리의 코드에서는 Arcface loss function을 사용합니다. 또한 해당 부분은 코드의 header부분에 위치하고 있습니다. 
 
-#### gradient descent : 손실함수(loss function)의 최소 지점을 찾기 위해 경사가 가장 가파른 곳을 찾아서 현재 위치에서 그 방향으로 내려가는 방법으로 손실함수의 최솟값을 찾을 수 있게 도와주는 역할을 합니다.
+#### gradient descent : 손실함수(loss function)의 최소 지점을 찾기 위해 경사가 가장 가파른 곳을 찾아서 현재 위치에서 그 방향으로 내려가는 방법으로 손실함수의 최솟값을 찾을 수 있게 도와주는 역할을 합니다. 이를 도식화하면 밑의 그림과 같습니다.
 7. 
 
-<img width="299" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/5f95066c-5aaa-4d9f-ad14-d48b4eff93c9">
+<img width="299" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/5f95066c-5aaa-4d9f-ad14-d48b4eff93c9">이
 
-기존 ResNet을 이용한 얼굴인식 모델의 손실함수인 Softmax loss functuion
+기존 ResNet을 이용한 얼굴인식 모델의 손실함수인 Softmax loss functuion은 다음과 같습니다.
 
 12. 
 
 <img width="272" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/0168ce00-cb8a-4254-84fe-525acce54037">
 
-에서 내적연산을 각도를 포함한 연산으로 다시 적어보면 다음과 같이 됩니다.
+이 전의 식에서 내적연산은 각도로 포현이 되는데, 이를 다시 표현하면 다음과 같이 됩니다.
 
 13.
 
 <img width="346" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/c98f7106-2c65-4110-9b16-32abf581a904">
 
-다음 연산에서 클래스 간 각도에 직접적 margin penalty(m)를 더 해서 계산한 것을 Arcface loss function
+여기서 기존의 work과 Arcface의 차이가 나타납니다. 그 차이점은 클래스 간 각도에 직접적 margin penalty(m)를 더 해서 계산한 것을 Arcface loss function이라고 합니다.
 
 14. 
 
 <img width="411" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/6a9e2def-d443-4032-9a65-4c2b4e29e50b">
 
-이라고 합니다. 그렇게 되면 서로 다른 클래스 간 각도의 차이를 더해 주어 더 큰 격차를 만들 수 있어 분변력을 증가시키고 학습을 안정화할 수 있기 때문에 우리는 손실함수로서 Arcface loss function을 사용하겠습니다. Softmax function하고 Arcface funtion을 그림으로 비교해 보면 다음과 같습니다.
+margin을 더함으로써, 모델은 학습을 할 때, 모래주머니를 차고 학습을 하는 것과 비슷한 효과를 가지게 됩니다. 더 어려운 학습을 하고 이 학습이 수렴했을 때, margin을 더했을때와 더하지 않았을 때 정확도가 차이가 나게 됩니다.
 
-15. 
+![image](https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/9759f7b6-abba-4b55-8c01-48071e9254f5)
 
-<img width="303" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/a7e2cff1-d07c-4207-95b6-886cc82bc424">
 
 # Ⅳ. Evaluation & Analysis
 
@@ -227,7 +226,7 @@ The number of test images :  2673
 
 
 # Ⅴ. Related Work
-ArcFace: Additive Angular Margin Loss for Deep Face Recognition : 이미지 12, 13, 14, 15
+ArcFace: Additive Angular Margin Loss for Deep Face Recognition : 이미지 12, 13, 14
 
 Deep Residual Learning for Image Recognition : 이미지 11
 
