@@ -1,5 +1,7 @@
 ### Video/Audio link : https://youtu.be/vGKdDwf2EqE
 
+
+
 # AI+X : DeepLearing
 
 # Title : Arcface 논문에 따른 얼굴 인식 모델 구현
@@ -117,7 +119,7 @@ CNN의 구조를 간략하게 나타내면 다음과 같습니다.
 <img width="561" alt="image" src="https://github.com/yunki00/AI-X-Deeplearing9/assets/132141925/03215c1f-99a9-4d95-bf78-ac6c5784b641">
 
 ### ResNet
-기본적인 CNN구조를 사용하면 layer가 일정 수준 이상으로 깊어지면 자유 파라미터들의 개수가 증가하여 학습의 하락을 유발합니다. 이것을 방지하기 위해 layer에 input x의 identity인 x를 더해줘서 연산을 수행하는 ResNet을 사용하여 layer를 깊게 만들어도 학습의 하락이 이뤄지지 않고 잘 학습되는 것을 확인 할 수 있습니다. 우리의 코드에서는 ResNet18을 사용합니다.
+기본적인 CNN구조를 사용하면 layer가 일정 수준 이상으로 깊어지면 자유 파라미터들의 개수가 증가하여 학습의 하락을 유발합니다(Gradient vanishing). 이것을 방지하기 위해 layer에 input x의 identity인 x를 더해줘서 연산을 수행하는 ResNet을 사용하여 layer를 깊게 만들어도 학습의 하락이 이뤄지지 않고 잘 학습되는 것을 확인 할 수 있습니다. 우리의 코드에서는 ResNet18을 사용합니다.
 
 11.
 
